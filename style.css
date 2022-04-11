@@ -1,0 +1,31 @@
+body{
+    background: coral;
+}
+.container{
+    width: 315px;
+    margin: 80px auto;
+    text-align: center;
+    border-top: 15px groove red;
+    border-bottom: 15px ridge red;
+    border-left: 13px ridge red;
+    border-right: 13px groove red;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 2px crimson;
+}
+#tens,#seconds,#dots{
+    font-size: 2rem;
+}
+button{
+    width: 90px;
+    height: 40px;
+    border: 1.4px solid white;
+    background: transparent;
+    margin: 6px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:hover{
+    background: white;
+    color: coral;
+}
