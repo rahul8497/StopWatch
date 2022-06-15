@@ -1,5 +1,5 @@
-var tens=00;
-var seconds=00;
+var tens=0;
+var seconds=0;
 var Appendtens=document.getElementById("tens");
 var Appendseconds=document.getElementById("seconds");
 var Startbtn=document.getElementById("Start-button");
@@ -8,7 +8,7 @@ var Resetbtn=document.getElementById("Reset-button");
 var interval;
 function StartInterval(){
     tens++;
-    if(tens<=9){
+    if(tens<9){
         Appendtens.innerHTML="0"+tens;
     }
     if(tens>9){
@@ -18,7 +18,7 @@ function StartInterval(){
         seconds++;
         Appendseconds.innerHTML="0"+seconds;
         tens=0;
-        Appendtens.innerHTML="00";
+        Appendtens.innerHTML="0"+tens;
     }
     if(seconds>9){
         Appendseconds.innerHTML=seconds;
@@ -32,8 +32,8 @@ Stopbtn.onclick=function(){
 }
 Resetbtn.onclick=function(){
     clearInterval(interval);
-    tens="00";
-    seconds="00";
-    Appendseconds.innerHTML=seconds;
-    Appendtens.innerHTML=tens;
+    tens=0;
+    seconds=0;
+    Appendseconds.innerHTML="0"+seconds;
+    Appendtens.innerHTML="0"+tens;
 }
